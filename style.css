@@ -1,0 +1,62 @@
+/*First Box which is converting into a circle and also change the size and color on hover*/
+.box{
+    width: 260px;
+    height: 100px;
+    background-color: red;
+    transition:width 2s, height 2s,border-radius 2s, background 3s;
+    
+
+}
+.box:hover{
+    height: 300px;
+    border-radius:4%;
+    background:yellow;
+}
+
+/* this is our secong infinite loop animation of a logo */
+.logo{
+    animation: cover 1s ease 0s infinite alternate both;
+    width: 260px;
+    height: 460px;
+    border-radius: 4%;
+    background-color: rgb(110, 255, 139);
+
+}
+@keyframes cover {
+    0%{
+        height: 460px;
+    }
+
+    100%{
+        height: 46px;
+    }
+}
+
+a{
+    animation: bouncing 1s ease 0s infinite alternate both;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    padding: 1em 2em,1.1em;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 400px;
+    background-color: rgb(21, 75, 57);
+    border-radius: 30%;
+    display: inline-block;
+    color: rgb(241, 237, 237);
+    cursor: pointer;
+    
+}
+@keyframes bouncing {
+    0%{
+        bottom: 0px;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+    100%{
+        bottom: 400px;
+        box-shadow: rgba(0, 0, 0, 0.014);
+
+    }
+}
